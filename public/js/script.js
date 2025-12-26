@@ -31,7 +31,8 @@ login.addEventListener("click", function () {
     .then((response) => response.json())
     .then((data) => {
       if (data.success) {
-        alert("Login succes! Welcome, " + data.user.name);
+        const userName = data.user && data.user.name ? data.user.name : "User";
+        alert("Login successful! Welcome, " + userName);
         window.location.href = "home.html";
       } else {
         alert(data.message); // Tampilkan pesan error dari server
