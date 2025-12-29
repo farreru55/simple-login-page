@@ -1,8 +1,21 @@
-# Simple Login Page
+# 🔑 Simple Login Page
 
 A simple full-stack login and registration application using **Node.js**, **Express**, and **MySQL**.
 
-## Project Structure
+## ✨ Features
+
+- **User Registration**: Create a new account.
+- **User Login**: Authenticate with existing credentials.
+- **Protected Redirect**: Redirects to a home page upon successful login.
+
+## 🛠️ Prerequisites
+
+Before running this project, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [MySQL](https://www.mysql.com/)
+
+## 📁 Project Structure
 
 The project follows a simple MVC-like structure:
 
@@ -12,14 +25,7 @@ The project follows a simple MVC-like structure:
   - `server.js`: Main entry point for the API server.
 - `scripts/`: Utility scripts (e.g., database setup).
 
-## Prerequisites
-
-Before running this project, ensure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (v14 or higher)
-- [MySQL](https://www.mysql.com/)
-
-## Installation & Setup
+## 🚀 Installation & Setup
 
 1.  **Clone the repository** (if applicable) or navigate to the project directory.
 
@@ -49,7 +55,7 @@ Before running this project, ensure you have the following installed:
       PORT=3000
       ```
 
-## Running the Application
+## 🚦 Running the Application
 
 1.  **Start the Backend Server**:
     ```bash
@@ -60,20 +66,14 @@ Before running this project, ensure you have the following installed:
 2.  **Access the Application**:
     - Open your browser and visit: `http://localhost:3000`
 
-## Features
-
-- **User Registration**: Create a new account.
-- **User Login**: Authenticate with existing credentials.
-- **Protected Redirect**: Redirects to a home page upon successful login.
-
-## API Endpoints
+## 🔌 API Endpoints
 
 - `POST /register`: Registers a new user.
   - Body: `{ "name": "user", "password": "pass" }`
 - `POST /login`: Authenticates a user.
   - Body: `{ "name": "user", "password": "pass" }`
 
-## Troubleshooting
+## 🔍 Troubleshooting
 
 - **Failed to connect to server**: Ensure the Node.js server is running (`node src/server.js`) and you are accessing the correct port (default 3000).
 - **MySQL Connection Error**: Check your `.env` file credentials and ensure the MySQL service is active.
